@@ -13,7 +13,8 @@ public class CurrencyConverter {
     protected float getAmountInNu() {
         return amountInNu;
     }
-    protected void setAmountInNu() {
-        this.amountInNu = amountInUSD * this.RATE;
+    private void setAmountInNu() {
+        float commision = (float) amountInUSD * (1.5f/100);
+        this.amountInNu = (amountInUSD - commision) * this.RATE;
     }
 }

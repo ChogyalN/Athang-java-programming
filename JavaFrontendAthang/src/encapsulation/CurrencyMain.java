@@ -6,9 +6,15 @@ public class CurrencyMain {
     public static void main(String[] args) {
         CurrencyConverter converter = new CurrencyConverter();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the amount in USD to convert into Ngultrum");
-        float USD = sc.nextFloat();
-        converter.setAmountInUSD(USD);
-        System.out.println("The converted rate of 100 USD in Nu is = "+ converter.getAmountInNu());
+        char exit = 'y';
+
+        while(exit == 'y'){
+            System.out.println("Enter the amount in USD to convert into Ngultrum");
+            float USD = sc.nextFloat();
+            converter.setAmountInUSD(USD);
+            System.out.println("The converted rate of "+ USD +" USD in Nu is = "+ converter.getAmountInNu());
+            System.out.print("Do you want to continue conversion (y/n): ");
+            exit = sc.next().charAt(0);
+        }
     }
 }
