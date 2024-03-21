@@ -10,7 +10,7 @@ public class InheritanceMain {
         inMain.createEmp();
     }
 
-    private void createEmp(){
+    private void createEmp() {
         Employee emp = new Employee();
         emp.address = "Changzamtog";
         emp.name = "Chogyal";
@@ -20,11 +20,10 @@ public class InheritanceMain {
         emp.extension = "no extension";
         emp.employeeType = "Regular";
         emp.workingBranch = "local branch";
-        System.out.println("@@@ Employee context @@@ "+ emp.getPesonalInfo());
-
+        System.out.println("@@@ Employee context @@@ " + emp.getPesonalInfo());
     }
 
-    private void createCustomer(){
+    private void createCustomer() {
         Customer cus = new Customer();
         cus.name = "Wangmo";
         cus.address = "Bebena";
@@ -33,6 +32,6 @@ public class InheritanceMain {
         cus.accNo = "22903829";
         cus.accountBranch = "BOB";
         cus.availableBal = "10930";
-        System.out.println("@@@ Customer context @@@ "+ cus.getPesonalInfo());
+        System.out.println("@@@ Customer context @@@ " + cus.getPesonalInfo());
     }
 }
