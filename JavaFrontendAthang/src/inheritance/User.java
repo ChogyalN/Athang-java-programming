@@ -1,13 +1,13 @@
 package inheritance;
 
 public class User {
-    public String name;
-    public String address;
-    public String phoneNo;
-    public String dob;
-    public String email;
+    protected String name;
+    protected String address;
+    protected String phoneNo;
+    protected String dob;
+    protected String email;
 
-    public String getPesonalInfo(){
+    protected String getPesonalInfo(){
         return this.name + " : " + this.address + " : "+ this.dob+ " : "+ this.email;
     }
 }
