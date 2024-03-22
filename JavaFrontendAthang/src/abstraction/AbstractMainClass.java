@@ -8,5 +8,8 @@ public class AbstractMainClass {
 
         Triangle normalMethod = new Triangle();
         normalMethod.normalMethod();
+
+        Drawable area = new Circle(3.2);
+        System.out.println("The area of a circle is = "+area.area());
     }
 }
