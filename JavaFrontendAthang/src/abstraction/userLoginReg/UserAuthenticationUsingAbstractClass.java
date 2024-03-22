@@ -2,7 +2,7 @@ package abstraction.userLoginReg;
 
 import java.util.Scanner;
 
-public class UserAuthenticationUsingAbstractClass implements AuthenticationUsingAbstractClass {
+public class UserAuthenticationUsingAbstractClass implements AuthenticationUsingInterface {
     User user;
 
     @Override

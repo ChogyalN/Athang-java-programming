@@ -10,7 +10,7 @@ public class MainUserAbstraction {
 
     private void execute() {
         System.out.println("********* WELCOME TO OUR SUPER COOL SYSTEM ***********");
-        AuthenticationUsingAbstractClass authenticationUsingAbstractClass = new UserAuthenticationUsingAbstractClass();
+        AuthenticationUsingInterface authenticationUsingAbstractClass = new UserAuthenticationUsingAbstractClass();
         authenticationUsingAbstractClass.doResigtration();
         authenticationUsingAbstractClass.doLogin();
         Scanner scanner = new Scanner(System.in);
