@@ -18,6 +18,5 @@ public class ExceptionMainClass {
             System.out.println("Please enter a valid number!");
             num = sc.nextInt();
         }
-
     }
 }
